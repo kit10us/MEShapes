@@ -1,0 +1,4 @@
+<setup>
+  <include>setup.me_setup</include>
+  <include>../common/ext_MEShapes.me_setup</include>
+</setup>

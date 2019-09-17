@@ -1,0 +1,11 @@
+<res>
+
+<asset type="effect" name="ColorSimple" source="ColorSimple.me_effect"/>
+<asset type="effect" name="TextureSimple" source="TextureSimple.me_effect"/>
+<asset type="effect" name="TextureAndColor" source="TextureAndColor.me_effect"/>
+<asset type="effect" name="FourColors" source="FourColors.me_effect"/>
+<asset type="effect" name="ColorAmbient" source="ColorAmbient.me_effect"/>
+<asset type="effect" name="TextureAmbient" source="TextureAmbient.me_effect"/>
+<asset type="effect" name="ColorAmbientInstanced" source="ColorAmbientInstanced.me_effect"/>
+
+</res>

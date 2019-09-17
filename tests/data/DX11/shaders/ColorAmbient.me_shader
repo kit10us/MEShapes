@@ -1,0 +1,39 @@
+<?xml profile="1.0" encoding="iso-8859-1"?>
+<xml>
+  <pixelshader name="ColorAmbient">
+    <source>ColorAmbient.ps</source>
+    <entry>ps_main</entry>
+    <profile>ps_4_0</profile>
+	<constants>
+	  <buffer>
+	    <element name="AmbientDown" type="Float3">
+		  <default>0.1, 0.1, 0.1</default>
+		</element>
+		<element type="Float1"/>
+	    <element name="AmbientUp" type="Float3">
+		  <default>0.9, 0.9, 0.9</default>
+		</element>
+		<element type="Float1"/>
+	  </buffer>
+	</constants>
+  </pixelshader>
+  <vertexshader name="ColorAmbient">
+    <source>ColorAmbient.vs</source>
+    <entry>vs_main</entry>
+    <profile>vs_4_0</profile>
+	<constants>
+	  <buffer>
+	    <element name="world" type="Matrix4x4"/>
+	    <element name="view" type="Matrix4x4"/>
+	    <element name="projection" type="Matrix4x4"/>
+	  </buffer>
+	</constants>
+    <vertexformat>
+	  <slot>
+        <element name="Position" type="Float3"/>
+  	    <element name="Diffuse" type="Color"/>
+	    <element name="Normal" type="Float3"/>
+	  </slot>
+    </vertexformat>
+  </vertexshader>
+</xml>

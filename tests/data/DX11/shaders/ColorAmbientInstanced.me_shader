@@ -1,0 +1,49 @@
+<?xml profile="1.0" encoding="iso-8859-1"?>
+<xml>
+  <pixelshader name="ColorAmbient">
+    <source>ColorAmbient.ps</source>
+    <entry>ps_main</entry>
+    <profile>ps_4_0</profile>
+	<constants>
+	  <buffer>
+	    <element name="AmbientDown" type="Float3">
+		  <default>0.1, 0.1, 0.1</default>
+		</element>
+		<element type="Float1"/>
+	    <element name="AmbientUp" type="Float3">
+		  <default>0.9, 0.9, 0.9</default>
+		</element>
+		<element type="Float1"/>
+	  </buffer>
+	</constants>  
+  </pixelshader>
+  <vertexshader name="ColorAmbientInstanced">
+    <source>ColorAmbientInstanced.vs</source>
+    <entry>vs_main</entry>
+    <profile>vs_4_0</profile>
+	<constants>
+	  <buffer>
+	    <element name="view" type="Matrix4x4"/>
+	    <element name="projection" type="Matrix4x4"/>
+	  </buffer>
+	</constants>
+	
+	<vertexformat>
+      <!-- Per-vertex vertex format. -->
+	  <slot>
+        <element name="Position" type="Float3"/>
+  	    <element name="Diffuse" type="Color"/>
+  	    <element semanticname="Normal" type="Float3"/>
+	  </slot>
+
+	  <!-- Per-instance vertex format. -->
+	  <!-- instancing is ? -->
+	  <!-- instances is the number of instance we want to allow for. -->
+	  <!-- class is either per per-instance (all vertices) or per vertex (each vertex). -->
+	  <!-- InstanceDataStepRate is the number of instances to draw before advancing an element. 0 for per-vertex. -->
+	  <slot instancing="Matrix" instances="5000" class="instance"  InstanceDataStepRate="1">
+	    <element semanticname="Matrix" semanticindex="0" type="Matrix4x4"/>
+	  </slot>
+    </vertexformat>
+  </vertexshader>
+</xml>

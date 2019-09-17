@@ -1,0 +1,8 @@
+<?xml profile="1.0" encoding="iso-8859-1"?>
+<xml>
+  <effect>
+    <pixelshader name="TextureSimple" source="TextureSimple.me_shader"/>
+    <vertexshader name="TextureSimple" source="TextureSimple.me_shader"/>
+	<texture name="Test" stage="0" source="heart01.png"/>
+  </effect>
+</xml>

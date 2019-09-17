@@ -1,0 +1,8 @@
+<?xml profile="1.0" encoding="iso-8859-1"?>
+<xml>
+  <effect>
+    <pixelshader name="TextureSimple" source="TextureSimple.me_shader"/>
+    <vertexshader name="TextureSimple" source="TextureSimple.me_shader"/>
+    <texture name="4" stage="0" source="4.bmp" min="point" mag="point" mip="point"/>
+  </effect>
+</xml>

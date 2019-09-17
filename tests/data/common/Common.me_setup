@@ -1,0 +1,24 @@
+<setup>
+
+<title>?RENDERER? Test (?TARGET?)</title>
+
+<define name="EXTENSIONS">../../../../extensions/?TARGET?</define>
+
+<renderer source="?EXTENSIONS?/MERenderer?RENDERER?.dll">
+	<display fullscreen="false" x="10" y="10" width="800" height="600"/>
+</renderer>
+
+<failuresAsCritical>true</failuresAsCritical>
+
+<logfile>log_?TARGET?.log</logfile>
+
+<assets>../?RENDERER?/shaders/</assets>
+<assets>../common/resources/</assets>
+<assets>../common/effects/</assets>
+<assets>../common/images/</assets>
+<assets>../common/models/</assets>
+<assets>../common/scripts/</assets>
+
+<include>../common/ext_MEShapes.me_setup</include>
+
+</setup>

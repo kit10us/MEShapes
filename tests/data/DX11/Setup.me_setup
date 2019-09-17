@@ -1,0 +1,7 @@
+<setup>
+
+<define name="RENDERER">DX11</define>
+<include>../common/Common.me_setup</include>
+<StartScene>Main</StartScene>
+
+</setup>

@@ -1,0 +1,25 @@
+<xml>
+  <pixelshader name="TextureSimple">
+    <source>TextureSimple.hlsl</source>
+    <entry>ps_main</entry>
+    <profile>ps_4_0</profile>
+  </pixelshader>
+  <vertexshader name="TextureSimple">
+    <source>TextureSimple.hlsl</source>
+    <entry>vs_main</entry>
+    <profile>vs_4_0</profile>
+	<constants>
+	  <buffer>
+	    <element name="world" type="Matrix4x4"/>
+	    <element name="view" type="Matrix4x4"/>
+	    <element name="projection" type="Matrix4x4"/>
+	  </buffer>
+	</constants>
+    <vertexformat>
+	  <slot>
+	    <element name="Position" type="Float3"/>
+	    <element name="Tex" type="TexCoord"/>
+	  </slot>
+	</vertexformat>
+  </vertexshader>
+</xml>

@@ -1,0 +1,195 @@
+ Entering Game::Initialize block
+
+ Entering ::xmlLoader first pass block
+
+ Entering ::loading "MEShapes.me_setup" block
+
+[ResourceManager::Add] Script manager: adding "MEShapes.me_setup" (MEShapes.me_setup).
+
+ Entering ::loading "setup.me_setup" block
+
+[ResourceManager::Add] Script manager: adding "setup.me_setup" (setup.me_setup).
+
+ Entering ::loading "../common/Common.me_setup" block
+
+[ResourceManager::Add] Script manager: adding "../common/Common.me_setup" (../common/Common.me_setup).
+
+ Entering Game::AddExtension "../../../../extensions/Debug/MERendererDX11.dll" block
+
+ Entering WindowsOS::CreateExtention( "../../../../extensions/Debug/MERendererDX11.dll" ) block
+
+ Entering Extension::Create( "../../../../extensions/Debug/MERendererDX11.dll" ) block
+
+ Entering MELoader block
+
+ Entering ::loading "../common/ext_MEShapes.me_setup" block
+
+[ResourceManager::Add] Script manager: adding "../common/ext_MEShapes.me_setup" (../common/ext_MEShapes.me_setup).
+
+ Entering ::loading "../common/ext_MEShapes.me_setup" block
+
+ Entering ::xmlLoader second pass block
+
+[Game::Initialize ::xmlLoader second pass ] loading "MEShapes.me_setup"
+
+[Game::Initialize ::xmlLoader second pass ] loading "setup.me_setup"
+
+[Game::Initialize ::xmlLoader second pass ] loading "../common/Common.me_setup"
+
+ Entering DefaultDebug block
+
+[Game::Initialize ::xmlLoader second pass ] Log file: log_Debug.log
+
+[Game::Initialize ::xmlLoader second pass ] loading "../common/ext_MEShapes.me_setup"
+
+[Game::Initialize ::xmlLoader second pass ] loading "../common/ext_MEShapes.me_setup"
+
+[Game::Initialize ] program: C:/dev/MEShapes/tests/output/v140_Debug/MEShapes_Test01 - Cube/MEShapes_Test01 - Cube.exe
+
+[Game::Initialize ] path:    C:\dev\MEShapes\tests\Data\DX11/
+
+[Game::Initialize ] time:    Sun Aug 25 14:37:47 2019
+
+
+[Game::Initialize ] Loading setup "MEShapes.me_setup"...
+
+[Game::Initialize ] Loading setup "setup.me_setup"...
+
+[Game::Initialize ] Loading setup "../common/Common.me_setup"...
+
+[Game::Initialize ] Loading setup "../common/ext_MEShapes.me_setup"...
+
+ Entering Game::AddExtension "../../../../extensions/Debug/MEShapes.dll" block
+
+ Entering WindowsOS::CreateExtention( "../../../../extensions/Debug/MEShapes.dll" ) block
+
+ Entering Extension::Create( "../../../../extensions/Debug/MEShapes.dll" ) block
+
+ Entering MELoader block
+
+[Game::Initialize ] Loading setup "../common/ext_MEShapes.me_setup"...
+
+ Entering Game::AddExtension "../../../../extensions/Debug/MEShapes.dll" block
+
+ Entering WindowsOS::CreateExtention( "../../../../extensions/Debug/MEShapes.dll" ) block
+
+ Entering Extension::Create( "../../../../extensions/Debug/MEShapes.dll" ) block
+
+ Entering MELoader block
+
+[Game::Initialize ] GameComponent summary...
+
+[Game::Initialize ] SceneManager
+
+[Game::Initialize ] ActionFactory
+
+ Entering OS Startup block
+
+ Entering ::Game Components OnBeforeStartup block
+
+ Entering ::SceneManager block
+
+ Entering ::ActionFactory block
+
+ Entering ::Startup block
+
+ Entering ::OnAfterStartup block
+
+ Entering ::SceneManager block
+
+ Entering ::ActionFactory block
+
+[Game::Initialize ] total startup time: 2.516330s
+
+[Game::Initialize ] Adding user specified scenes.
+
+ Entering ::Changing starting scene. block
+
+ Entering Scene::ChangeScene block
+
+ Entering ::Component_OnBeforeStart( "main") block
+
+[Game::Initialize ::Changing starting scene. Scene::ChangeScene ::Component_OnBeforeStart( "main") ] Starting scene "main" Begin
+
+ Entering Scene::OnBeforeStart block
+
+ Entering ::Component "ObjectAllocatorComponent block
+
+[Game::Initialize ::Changing starting scene. Scene::ChangeScene ::Component_OnBeforeStart( "main") Scene::OnBeforeStart ::Component "ObjectAllocatorComponent ] enabled
+
+ Entering ::OnStart block
+
+[Game::Initialize ::Changing starting scene. Scene::ChangeScene ::OnStart ] OnStart Begin
+
+ Entering Scene::AddResources(resources/Standard.me_res) block
+
+[ResourceManager::Add] Effect manager: adding "ColorSimple" (../DX11/shaders/ColorSimple.me_effect).
+
+ Entering EffectFactories::Produce(../DX11/shaders/ColorSimple.me_effect) block
+
+[ResourceManager::Add] PixelShader manager: adding "ColorSimple" (../DX11/shaders/ColorSimple.me_shader).
+
+[ResourceManager::Add] VertexShader manager: adding "ColorSimple" (../DX11/shaders/ColorSimple.me_shader).
+
+[ResourceManager::Add] Effect manager: adding "TextureSimple" (../DX11/shaders/TextureSimple.me_effect).
+
+ Entering EffectFactories::Produce(../DX11/shaders/TextureSimple.me_effect) block
+
+[ResourceManager::Add] PixelShader manager: adding "TextureSimple" (../DX11/shaders/TextureSimple.me_shader).
+
+[ResourceManager::Add] VertexShader manager: adding "TextureSimple" (../DX11/shaders/TextureSimple.me_shader).
+
+[ResourceManager::Add] Texture manager: adding "Test" (../common/images/heart01.png).
+
+[ResourceManager::Add] Effect manager: adding "TextureAndColor" (../DX11/shaders/TextureAndColor.me_effect).
+
+ Entering EffectFactories::Produce(../DX11/shaders/TextureAndColor.me_effect) block
+
+[ResourceManager::Add] PixelShader manager: adding "TextureAndColor" (../DX11/shaders/TextureAndColor.me_shader).
+
+[ResourceManager::Add] VertexShader manager: adding "TextureAndColor" (../DX11/shaders/TextureAndColor.me_shader).
+
+[ResourceManager::Add] Effect manager: adding "FourColors" (../DX11/shaders/FourColors.me_effect).
+
+ Entering EffectFactories::Produce(../DX11/shaders/FourColors.me_effect) block
+
+[ResourceManager::Add] Texture manager: adding "4" (../common/images/4.bmp).
+
+[ResourceManager::Add] Effect manager: adding "ColorAmbient" (../DX11/shaders/ColorAmbient.me_effect).
+
+ Entering EffectFactories::Produce(../DX11/shaders/ColorAmbient.me_effect) block
+
+[ResourceManager::Add] PixelShader manager: adding "ColorAmbient" (../DX11/shaders/ColorAmbient.me_shader).
+
+[ResourceManager::Add] VertexShader manager: adding "ColorAmbient" (../DX11/shaders/ColorAmbient.me_shader).
+
+[ResourceManager::Add] Effect manager: adding "TextureAmbient" (../DX11/shaders/TextureAmbient.me_effect).
+
+ Entering EffectFactories::Produce(../DX11/shaders/TextureAmbient.me_effect) block
+
+[ResourceManager::Add] PixelShader manager: adding "TextureAmbient" (../DX11/shaders/TextureAmbient.me_shader).
+
+[ResourceManager::Add] VertexShader manager: adding "TextureAmbient" (../DX11/shaders/TextureAmbient.me_shader).
+
+[ResourceManager::Add] Effect manager: adding "ColorAmbientInstanced" (../DX11/shaders/ColorAmbientInstanced.me_effect).
+
+ Entering EffectFactories::Produce(../DX11/shaders/ColorAmbientInstanced.me_effect) block
+
+[ResourceManager::Add] PixelShader manager: adding "ColorAmbientInstanced" (../DX11/shaders/ColorAmbientInstanced.me_shader).
+
+[ResourceManager::Add] VertexShader manager: adding "ColorAmbientInstanced" (../DX11/shaders/ColorAmbientInstanced.me_shader).
+
+ Entering Scene::AddResources(resources/TestTextures.me_res) block
+
+[Game::Initialize ::Changing starting scene. Scene::ChangeScene ::OnStart ] OnStart End
+
+ Entering ::Component_OnAfterStart( "main") block
+
+ Entering Scene::OnAfterStart block
+
+[Game::Initialize ::Changing starting scene. Scene::ChangeScene ::Component_OnAfterStart( "main") Scene::OnAfterStart ] Component "ObjectAllocatorComponent" OnAfterStart Begin
+
+[Game::Initialize ::Changing starting scene. Scene::ChangeScene ::Component_OnAfterStart( "main") Scene::OnAfterStart ] Component "ObjectAllocatorComponent" OnAfterStart Done
+
+[Game::Initialize ::Changing starting scene. Scene::ChangeScene ::Component_OnAfterStart( "main") ] Start scene "main" Done
+

@@ -1,0 +1,6 @@
+<res>
+
+<asset type="texture" name="4" source="4.bmp"/>
+<asset type="texture" name="test" source="heart01.png"/>
+
+</res>

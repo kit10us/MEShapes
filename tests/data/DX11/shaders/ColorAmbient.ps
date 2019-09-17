@@ -1,0 +1,32 @@
+struct VS_OUT
+{
+	float4 position		: SV_POSITION;
+	float4 color		: COLOR;
+	float3 normal       : NORMAL;
+};
+
+cbuffer lighting
+{
+	float3 AmbientDown : packoffset(c0);
+	float3 AmbientUp : packoffset(c1);
+};
+
+float3 CalculateAmbient( float3 normal, float4 color )
+{
+	// Convert from [-1, 1] to [0, 1]
+	float up = normal.y * 0.5 + 0.5;
+	
+	// Calculate the ambient value.
+	float3 ambient = AmbientDown + up * AmbientUp;
+	
+	// Apply the ambient value to the color
+	return ambient * color;
+};
+
+float3 ps_main( in VS_OUT ps_in ) : SV_TARGET
+{
+	float4 color = saturate( ps_in.color );
+	float3 normal = normalize( ps_in.normal );
+	color = float4(color.rgb * color.rgb, color.a );
+	return CalculateAmbient( normal, color );
+}

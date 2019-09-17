@@ -1,0 +1,26 @@
+<?xml profile="1.0" encoding="iso-8859-1"?>
+<xml>
+  <pixelshader name="ColorSimple">
+    <source>ColorSimple.hlsl</source>
+    <entry>ps_main</entry>
+    <profile>ps_4_0</profile>
+  </pixelshader>
+  <vertexshader name="ColorSimple">
+    <source>ColorSimple.hlsl</source>
+    <entry>vs_main</entry>
+    <profile>vs_4_0</profile>
+	<constants>
+	  <buffer>
+	    <element name="world" type="Matrix4x4"/>
+	    <element name="view" type="Matrix4x4"/>
+	    <element name="projection" type="Matrix4x4"/>
+	  </buffer>
+	</constants>
+	<vertexformat>
+      <slot>
+        <element name="Position" type="Float3"/>
+  	    <element name="Diffuse" type="Color"/>
+      </slot>
+	</vertexformat>
+  </vertexshader>
+</xml>
