@@ -24,8 +24,6 @@
 #include <shapes/Sphere.h>
 #include <shapes/Tube.h>
 
-#include <memory.h>
-
 using namespace shapes;
 using namespace me;
 using namespace render;
@@ -46,7 +44,6 @@ __declspec(dllexport) bool MELoader( me::game::IGame * gameBase, const qxml::Ele
 	// Add sculpter creators.
 	auto geometryManager = unify::polymorphic_downcast< rm::ResourceManager< me::render::Geometry > * >( gameInstance->GetManager< Geometry >( ) );
 	auto shapeFactory = dynamic_cast< me::sculpter::SculpterFactory *>( geometryManager->GetFactory( "me_shape" ) );
-	assert( shapeFactory );
 	shapeFactory->AddShapeCreator( "box", me::sculpter::IShapeCreator::ptr( new shapes::Box(), Deleter ) );
 	shapeFactory->AddShapeCreator( "beveledbox", me::sculpter::IShapeCreator::ptr( new shapes::BeveledBox(), Deleter ) );
 	shapeFactory->AddShapeCreator( "Circle", me::sculpter::IShapeCreator::ptr( new shapes::Circle(), Deleter ) );

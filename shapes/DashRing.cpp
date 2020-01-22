@@ -34,7 +34,7 @@ void DashRing::Create(PrimitiveList & primitiveList, const unify::Parameters & p
 	{
 		float radiusOuter = parameters.Get( "majorradius", 1.0f );
 		float radiusInner = parameters.Get( "minorradius", 0.9f );
-		size_t count = parameters.Get< size_t >( "count", 12 );	// Number of dashes
+		unsigned int count = parameters.Get( "count", 12 );	// Number of dashes
 		float fSize = parameters.Get( "size1", 0.5f );	// Unit size of visible part of dash (0.0 to 1.0)
 		float definition = parameters.Get( "definition", 4.0f );		// Definition of each dash
 		Color diffuse = parameters.Get( "diffuse", ColorWhite() );
@@ -160,7 +160,7 @@ void DashRing::Create(PrimitiveList & primitiveList, const unify::Parameters & p
 
 		if ( parameters.AuditCount() != 0 )
 		{
-			throw me::exception::FailedToCreate( "Invalid parameters: " + parameters.Audit() );
+			throw me::exception::FailedToCreate( "Invalid parameters\n" + parameters.Audit() );
 		}
 	}
 	catch( std::exception & ex )
