@@ -3,12 +3,12 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
-    <OutDir>..\..\..\output\$(DefaultPlatformToolset)_$(Configuration)\$(ProjectName)\</OutDir>
-    <IntDir>..\..\..\intermediate\$(DefaultPlatformToolset)_$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)output\$(DefaultPlatformToolset)_$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)intermediate\$(DefaultPlatformToolset)_$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
-      <AdditionalIncludeDirectories>.;..\..\..\unify;..\..\..\qxml;..\..\..\qjson;..\..\..\ResourceManager;..\..\..\MercuryEngine;..\..\..\MEWinMain;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)MEWinMain;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>..\..\..\lib\$(DefaultPlatformToolset)_$(Configuration);%AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
