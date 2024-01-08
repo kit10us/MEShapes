@@ -51,7 +51,7 @@ void Circle::Create( PrimitiveList & primitiveList, const unify::Parameters & pa
 		set.SetEffect( effect );
 
 		// Method 1 - Fan
-		set.AddMethod( RenderMethod::CreateTriangleListIndexed( vertexCount, indexCount, 0, 0 ) );
+		set.AddMethod( RenderMethod::CreateTriangleListIndexed( vertexCount, (unsigned int)indexCount, 0, 0 ) );
 
 		std::shared_ptr< unsigned char > vertices( new unsigned char[vertexCount * vd->GetSizeInBytes( 0 )] );
 		unify::DataLock lock( vertices.get(), vd->GetSizeInBytes( 0 ), vertexCount, unify::DataLockAccess::ReadWrite, 0 );
@@ -115,8 +115,8 @@ void Circle::Create( PrimitiveList & primitiveList, const unify::Parameters & pa
 		for( size_t s = 0; s < segments; s++ )
 		{
 			indices[(s * 3) + 0] = 0;
-			indices[(s * 3) + 1] = s + 1;
-			indices[(s * 3) + 2] = (s < (segments - 1)) ? s + 2 : 1;
+			indices[(s * 3) + 1] = (me::render::Index32)s + 1;
+			indices[(s * 3) + 2] = (me::render::Index32)((s < (segments - 1)) ? s + 2 : 1);
 		}
 
 		set.AddIndexBuffer( { { { indexCount, &indices[0] } } } );

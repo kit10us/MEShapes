@@ -222,7 +222,7 @@ void BuildSphere( me::render::PrimitiveList & primitiveList, me::render::Effect:
 
 
 MainScene::MainScene( me::game::Game * gameInstance )
-	:Scene( gameInstance, "main" )
+	:Scene( gameInstance, "Main" )
 {	
 }
 

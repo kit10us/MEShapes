@@ -73,7 +73,7 @@ void BeveledBox::Create( PrimitiveList & primitiveList, const unify::Parameters 
 
 		// Set the vertices from the TEMP vertices...
 		std::shared_ptr< unsigned char > verticesRaw( new unsigned char[vd->GetSizeInBytes( 0 ) * vertexCount] );
-		DataLock lock( verticesRaw.get(), vd->GetSizeInBytes( 0 ), vertexCount, DataLockAccess::ReadWrite, 0 );
+		DataLock lock( verticesRaw.get(), (unsigned int)vd->GetSizeInBytes( 0 ), vertexCount, DataLockAccess::ReadWrite, 0 );
 
 		VertexBufferParameters vbParameters{ vd, { { vertexCount, verticesRaw.get() } }, bufferUsage };
 
