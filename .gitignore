@@ -1,3 +1,4 @@
-
-tests/data/DX11/log_Debug.log
+.vs/
 *.log
+*.vcxproj.user
+

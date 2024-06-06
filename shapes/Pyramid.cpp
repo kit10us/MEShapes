@@ -47,7 +47,7 @@ void Pyramid::Create(PrimitiveList & primitiveList, const unify::Parameters & pa
 		BufferSet & set = primitiveList.AddBufferSet();
 		set.SetEffect( effect );
 
-		set.AddMethod( RenderMethod::CreateTriangleListIndexed( vertexCount, indexCount, 0, 0 ) );
+		set.AddMethod( RenderMethod::CreateTriangleListIndexed( vertexCount, (unsigned int)indexCount, 0, 0 ) );
 
 		unsigned short stream = 0;
 
